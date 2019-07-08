@@ -1,0 +1,101 @@
+
+3/31/2019 8:41:37 AM
+------------------------------------------------------------------------------------------------
+Controller Name :- Hangfire
+Action Method Name :- Excel Service
+------------------------------------------------------------------------------------------------
+Message ---
+{0}Column 'Business Unit' does not belong to table .
+Source ---
+{0}System.Data.Common
+StackTrace ---
+{0}   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Api.Infrastructure.ExcelService.GetEventSummaryInformation() in C:\Users\Admin\Desktop\FeedbackManagementSystem\Api\Infrastructure\ExcelService.cs:line 65
+TargetSite ---
+{0}System.Data.DataColumn GetDataColumn(System.String)
+
+
+3/31/2019 8:51:47 AM
+------------------------------------------------------------------------------------------------
+Controller Name :- Hangfire
+Action Method Name :- Excel Service
+------------------------------------------------------------------------------------------------
+Message ---
+{0}String '1/12/2018 12:00:00 AM' was not recognized as a valid DateTime.
+Source ---
+{0}System.Private.CoreLib
+StackTrace ---
+{0}   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at Api.Infrastructure.ExcelService.GetEventSummaryInformation() in C:\Users\Admin\Desktop\FeedbackManagementSystem\Api\Infrastructure\ExcelService.cs:line 65
+TargetSite ---
+{0}System.DateTime ParseExact(System.String, System.String, System.IFormatProvider)
+
+
+3/31/2019 8:59:55 AM
+------------------------------------------------------------------------------------------------
+Controller Name :- Hangfire
+Action Method Name :- Excel Service
+------------------------------------------------------------------------------------------------
+Message ---
+{0}String '10/12/2018 12:00:00 AM' was not recognized as a valid DateTime.
+Source ---
+{0}System.Private.CoreLib
+StackTrace ---
+{0}   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at Api.Infrastructure.ExcelService.GetEventSummaryInformation() in C:\Users\Admin\Desktop\FeedbackManagementSystem\Api\Infrastructure\ExcelService.cs:line 65
+TargetSite ---
+{0}System.DateTime ParseExact(System.String, System.String, System.IFormatProvider)
+
+
+3/31/2019 9:09:30 AM
+------------------------------------------------------------------------------------------------
+Controller Name :- Feedback
+Action Method Name :- CreateFeedback
+------------------------------------------------------------------------------------------------
+Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+Message ---
+{0}Sequence contains no matching element
+Source ---
+{0}System.Linq
+StackTrace ---
+{0}   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Business.FeedbackBusiness.AddAsync(PagingOptions pagingOptions, SortOptions`2 sortOptions, SearchOptions`2 searchOptions, FeedbackForm feedback) in C:\Users\Admin\Desktop\FeedbackManagementSystem\Business\FeedbackBusiness.cs:line 76
+   at Api.Controllers.FeedbackController.CreateFeedback(PagingOptions pagingOptions, SortOptions`2 sortOptions, SearchOptions`2 searchOptions, FeedbackForm feedback) in C:\Users\Admin\Desktop\FeedbackManagementSystem\Api\Controllers\FeedbackController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+TargetSite ---
+{0}TSource Single[TSource](System.Collections.Generic.IEnumerable`1[TSource], System.Func`2[TSource,System.Boolean])
+
+
+3/31/2019 9:12:56 AM
+------------------------------------------------------------------------------------------------
+Controller Name :- Feedback
+Action Method Name :- CreateFeedback
+------------------------------------------------------------------------------------------------
+Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+Message ---
+{0}Sequence contains no matching element
+Source ---
+{0}System.Linq
+StackTrace ---
+{0}   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Business.FeedbackBusiness.AddAsync(PagingOptions pagingOptions, SortOptions`2 sortOptions, SearchOptions`2 searchOptions, FeedbackForm feedback) in C:\Users\Admin\Desktop\FeedbackManagementSystem\Business\FeedbackBusiness.cs:line 76
+   at Api.Controllers.FeedbackController.CreateFeedback(PagingOptions pagingOptions, SortOptions`2 sortOptions, SearchOptions`2 searchOptions, FeedbackForm feedback) in C:\Users\Admin\Desktop\FeedbackManagementSystem\Api\Controllers\FeedbackController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+TargetSite ---
+{0}TSource Single[TSource](System.Collections.Generic.IEnumerable`1[TSource], System.Func`2[TSource,System.Boolean])
+

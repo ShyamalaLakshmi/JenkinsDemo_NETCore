@@ -1,0 +1,1 @@
+﻿This folder contains the emails sent in my app.

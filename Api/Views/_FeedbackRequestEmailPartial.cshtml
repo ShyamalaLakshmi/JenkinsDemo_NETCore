@@ -1,0 +1,109 @@
+﻿@model Models.FeedbackRequestEmailTemplateModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" media="all">
+    <style type="text/css" media="all">
+        body {
+            background: #d9e0e7;
+            font-size: 12px;
+            font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #707478;
+            line-height: 1.42857143;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .jumbotron {
+            padding: 4rem 2rem;
+            background: #f0f3f4;
+            border-radius: 6px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: .5rem;
+            font-family: inherit;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .text-inverse {
+            color: #2d353c !important;
+        }
+
+        .f-s-16 {
+            font-size: 16px !important;
+        }
+
+        .m-b-30 {
+            margin-bottom: 30px !important;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+
+<body style="background: #d9e0e7;font-size: 12px;font-family: 'Open Sans', &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #707478;line-height: 1.42857143;-webkit-font-smoothing: antialiased;">
+    <div style="padding: 4rem 2rem;background: #f0f3f4;border-radius: 6px;text-align: center !important;">
+        <h2 style="font-size: 30px; font-weight: 600; margin-bottom: .5rem; font-family: inherit; line-height: 1.2; color: #2d353c !important;">
+            Feedback Requested for @Model.EventName on @Model.EventDate
+        </h2>
+        <p style="font-size: 16px !important;margin-bottom: 30px !important;">
+            Dear @Model.ParticipantName,
+            <br/>
+            <br/>
+            Feedback like this helps us constantly improve our outreach experiences by knowing what
+            we are doing right and what we can work on. So, We appreciate you taking the time to send us this helpful
+            response.
+            <br> Don't hesitate to reach out if you have any more questions, comments, or concerns.
+            <br>
+            <br>
+            <a href="@Model.FeedbackUrl" style="text-decoration: none;display: inline-block;font-weight: 400;color: #fff;text-align: center;vertical-align: middle;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-color: #007bff;border: 1px solid transparent;padding: .375rem .75rem;font-size: 1rem;line-height: 1.5;border-radius: .25rem;transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;border-color: #007bff;">Share Feedback</a>
+            <br>
+            <br>
+            Cheers,
+            <br>
+            Outreach Team
+        </p>
+    </div>
+</body>
+
+</html>
